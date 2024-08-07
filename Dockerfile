@@ -1,8 +1,8 @@
+# Dockerfile
 FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY . ..
+COPY hello.py .
 
-# Comando para executar o script
-CMD ["python", "script.py"]
+CMD ["python", "hello.py"]
